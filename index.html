@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Podcast</title>
+    <link rel="stylesheet" type="text/css" href="green-audio-player.css">
+    <script src="https://cdn.jsdelivr.net/gh/greghub/green-audio-player/dist/js/green-audio-player.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <style>
+
+
+        .ready-player-1, .ready-player-2, .ready-player-3, .ready-player-4 {
+            margin: 24px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Podcasts der Goetheschule</h1>
+    <div class="ready-player-1 player">
+        <audio crossorigin>
+            <source src="files/examples_audio_example-1.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+    <div class="ready-player-2 player">
+        <audio crossorigin>
+            <source src="files/examples_audio_example-1.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+    <div class="ready-player-3 player-with-download">
+        <audio crossorigin>
+            <source src="files/examples_audio_example-1.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+    <div class="ready-player-4 player-with-accessibility">
+        <audio crossorigin>
+            <source src="files/examples_audio_example-1.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            GreenAudioPlayer.init({
+                selector: '.player',
+                stopOthersOnPlay: true
+            });
+
+            GreenAudioPlayer.init({
+                selector: '.player-with-download',
+                stopOthersOnPlay: true,
+                showDownloadButton: true,
+                enableKeystrokes: true
+            });
+
+            GreenAudioPlayer.init({
+                selector: '.player-with-accessibility',
+                stopOthersOnPlay: true,
+                enableKeystrokes: true
+            });
+        });
+    </script>
+</body>
+</html>
