@@ -83,7 +83,7 @@
     position:relative
 }
 .green-audio-player .slider .gap-progress{
-    background-color:#0275d8;
+    background-color:#ebaf61;
     border-radius:inherit;
     position:absolute;
     pointer-events:none
@@ -92,7 +92,7 @@
     height:16px;
     width:16px;
     border-radius:8px;
-    background-color:#0275d8;
+    background-color:#ebaf61;
     position:absolute;
     pointer-events:all;
     -webkit-box-shadow:0 1px 1px 0 rgba(0,0,0,.32);
@@ -109,7 +109,7 @@
     border-radius:50%
 }
 .green-audio-player .controls{
-    font-family:Roboto,sans-serif;
+    font-family: 'Playfair Display', serif !important;
     font-size:16px;
     line-height:18px;
     color:#55606e;
