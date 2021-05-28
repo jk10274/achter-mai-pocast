@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Podcast</title>
+	<title>Podcasts: 80 Jahre Unternehmen Barbarossa</title>
     <link rel="stylesheet" type="text/css" href="green-audio-player.css">
     <script src="https://cdn.jsdelivr.net/gh/greghub/green-audio-player/dist/js/green-audio-player.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,8 +15,7 @@
     <style>
         body {
             font-family: 'Playfair Display', serif !important;
-            background: rgb(235,175,97);
-            background: radial-gradient(circle, rgba(235,175,97,1) 0%, rgba(235,175,96,0.4724264705882353) 100%);
+            background-color: rgba(248, 249, 253, 1.0);
         }
         /* @media (prefers-color-scheme: dark) {
             body {
@@ -32,7 +31,17 @@
     </style>
 </head>
 <body>
-    <h1 class="m-5 fw-bold text-center">Podcasts</h1>
+    <div class="container my-4  ">
+        <div class="row">
+            <div class="col py-2">
+                <img class="my-auto" style="height: 3rem; float: right;" src="img/GSD-Logo-Black.png">
+            </div>
+            <div class="col d-flex py-2">
+                <p class="my-auto">PODCASTS</p>
+            </div>
+          </div>
+    </div>
+    <h1 class="m-5 fw-bold text-center">80 Jahre Unternehmen Barbarossa</h1>
     <h4 class="mx-5">Konvikt</h4>
     <div class="ready-player-1 player m-5">
         <audio crossorigin>
@@ -68,6 +77,9 @@
         <audio crossorigin>
             <source src="https://cdn.jsdelivr.net/gh/goetheschule/podcasts/unternehmen-barbarossa.mp3" type="audio/mpeg">
         </audio>
+    </div>
+    <div>
+        <small><p class="text-secondary text-center">Ein Projekt der Goetheschule Dieburg. <a href="https://achter-mai.web.app/impressum">Impressum</a> | <a href="https://achter-mai.web.app/datenschutzerklrung">Datenschutzerklärung</a></p></small>
     </div>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
