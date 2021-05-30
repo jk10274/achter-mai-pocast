@@ -76,10 +76,21 @@
             -webkit-text-fill-color: transparent;
         }
 
-        @media only screen and (min-width: 768px) {
+        @media only screen and (min-width: 1000px) {
             
             .title {
                 font-size: 6rem !important;
+            }
+            .desktop-hide {
+                display: none !important;
+            }
+
+        }
+
+        @media only screen and (max-width: 1000px) {
+            
+            .mobile-hide {
+                display: none !important;
             }
 
         }
@@ -100,7 +111,7 @@
     <div class="m-5 p-3">
         <p class="fs-5">Was geschah während des Zweiten Weltkrieges in unserer Gegend? Wie wurden Menschen unterschiedlichen Glaubens und Herkunft behandelt? Was versteht man unter Völkermord und Vernichtungskrieg? Um über die verschiedenen Geschehnisse, Operationen und Menschengruppen im Zuge des Zweiten Weltkrieges zu informieren, bekamen die Schüler der Klasse G10B die Möglichkeit, zehnminütige Podcasts zu diesen Themen zu erstellen. Der russische Soldatenfriedhof in Klein-Zimmern galt als Grundlage und Motivation für das Projekt mit regionalem Bezug für die Schüler. Podcasts sind Audio-Beiträge die über gewisse Themen informieren. In einem Podcast werden diese meist in verschiedenen Episoden vorgestellt und anschließend diskutiert oder an Beispielen verdeutlicht. “Setzt euch mit der Vergangenheit auseinander. Die Leben der Verstorbenen dienen als Mahnmal für die Zukunft. Wir sind dafür verantwortlich, dass so etwas nie wieder geschieht.”</p>
     </div>
-    <div class="row row-cols-1 row-cols-md-2 g-4 m-5">
+    <div class="row row-cols-1 row-cols-md-2 g-4 m-5 mobile-hide">
         <div class="col">
           <div class="card">
             <div class="card-body">
@@ -155,41 +166,44 @@
             </div>
         </div>
       </div>
-    <h4 class="mx-5">Konvikt</h4>
-    <div class="ready-player-1 player m-5">
-        <audio crossorigin>
-            <source src="https://cdn.jsdelivr.net/gh/goetheschule/podcasts/konvikt.mp3" type="audio/mpeg">
-        </audio>
-    </div>
-    <h4 class="mx-5">NSDÄB</h4>
-    <div class="ready-player-2 player m-5">
-        <audio crossorigin>
-            <source src="https://cdn.jsdelivr.net/gh/goetheschule/podcasts/nsdaeb.mp3" type="audio/mpeg">
-        </audio>
-    </div>
-    <h4 class="mx-5">Sankt Josephshaus</h4>
-    <div class="ready-player-3 player m-5">
-        <audio crossorigin>
-            <source src="https://cdn.jsdelivr.net/gh/goetheschule/podcasts/sankt-josephshaus.mp3" type="audio/mpeg">
-        </audio>
-    </div>
-    <h4 class="mx-5">Soldatenfriedhof</h4>
-    <div class="ready-player-4 player m-5">
-        <audio crossorigin>
-            <source src="https://cdn.jsdelivr.net/gh/goetheschule/podcasts/soldatenfriedhof.mp3" type="audio/mpeg">
-        </audio>
-    </div>
-    <h4 class="mx-5">Sowjetische Kriegsgefangene</h4>
-    <div class="ready-player-4 player m-5">
-        <audio crossorigin>
-            <source src="https://cdn.jsdelivr.net/gh/goetheschule/podcasts/sowjetische-kriegsgefangene.mp3" type="audio/mpeg">
-        </audio>
-    </div>
-    <h4 class="mx-5">Unternehmen Barbarossa</h4>
-    <div class="ready-player-4 player m-5">
-        <audio crossorigin>
-            <source src="https://cdn.jsdelivr.net/gh/goetheschule/podcasts/unternehmen-barbarossa.mp3" type="audio/mpeg">
-        </audio>
+    <div class="desktop-hide">
+        <h4 class="mx-5 fw-bold">Konvikt</h4>
+        <p class="mx-5 inter mt-4">Viele Dieburger Bürgerinnen und Bürger kennen das schöne, alte Backsteingebäude und nennen es „Konvikt“ oder „Kettelerhaus“. Aber ist auch dessen Geschichte bekannt? Die Schülerinnen beleuchten in ihrem Podcast die Funktion des Hauses im Zweiten Weltkrieg und führen uns in eine Zeit zurück, über die noch nicht alles vollends geklärt ist.</p>
+        <div class="ready-player-1 player m-5">
+            <audio crossorigin>
+                <source src="https://cdn.jsdelivr.net/gh/goetheschule/podcasts/konvikt.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+        <h4 class="mx-5">NSDÄB</h4>
+        <div class="ready-player-2 player m-5">
+            <audio crossorigin>
+                <source src="https://cdn.jsdelivr.net/gh/goetheschule/podcasts/nsdaeb.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+        <h4 class="mx-5">Sankt Josephshaus</h4>
+        <div class="ready-player-3 player m-5">
+            <audio crossorigin>
+                <source src="https://cdn.jsdelivr.net/gh/goetheschule/podcasts/sankt-josephshaus.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+        <h4 class="mx-5">Soldatenfriedhof</h4>
+        <div class="ready-player-4 player m-5">
+            <audio crossorigin>
+                <source src="https://cdn.jsdelivr.net/gh/goetheschule/podcasts/soldatenfriedhof.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+        <h4 class="mx-5">Sowjetische Kriegsgefangene</h4>
+        <div class="ready-player-4 player m-5">
+            <audio crossorigin>
+                <source src="https://cdn.jsdelivr.net/gh/goetheschule/podcasts/sowjetische-kriegsgefangene.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+        <h4 class="mx-5">Unternehmen Barbarossa</h4>
+        <div class="ready-player-4 player m-5">
+            <audio crossorigin>
+                <source src="https://cdn.jsdelivr.net/gh/goetheschule/podcasts/unternehmen-barbarossa.mp3" type="audio/mpeg">
+            </audio>
+        </div>
     </div>
     <div>
         <small><p class="text-secondary text-center  inter">Ein Projekt der Goetheschule Dieburg. <a href="https://achter-mai.web.app/impressum">Impressum</a> | <a href="https://achter-mai.web.app/datenschutzerklrung">Datenschutzerklärung</a></p></small>
