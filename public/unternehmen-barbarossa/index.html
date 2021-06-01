@@ -21,24 +21,45 @@
             font-family: 'Playfair Display', serif !important;
             background-color: rgba(248, 249, 253, 1.0);
         }
-        /* @media (prefers-color-scheme: dark) {
+        .inter {
+            font-family: 'Inter', sans-serif !important;
+            }
+        .logo-dark-show {
+            display: none;
+        }
+        .content {
+            margin-left: auto;
+            margin-right: auto;
+            width: 727px;
+        }
+        @media only screen and (max-width: 1068px) {
+            .content {
+            width: 100%;
+            }
+            }
+        @media (prefers-color-scheme: dark) {
             body {
                 color: #eee;
-                background: rgb(235,175,96);
-                background: radial-gradient(circle, rgba(235,175,96,0.5760679271708684) 0%, rgba(0,0,0,0.7413340336134453) 100%);
+                background-color: black;
             }
-
             body a  {
                 color: #809fff;
             }
-        } */    
+            .logo-dark-show {
+                display: block;
+            }
+            .logo-dark-hide {
+                display: none;
+            }
+        }    
     </style>
 </head>
 <body>
-    <div class="container my-4  ">
+    <div class="container my-4">
         <div class="row">
             <div class="col py-2">
-                <img class="my-auto" style="height: 3rem; float: right;" src="../img/GSD-Logo-Black.png" draggable="false">
+                <img class="my-auto logo-dark-hide" style="height: 3rem; float: right;" src="../img/GSD-Logo-Black.png" draggable="false">
+                <img class="my-auto logo-dark-show" style="height: 3rem; float: right;" src="../img/GSD-Logo-White.png" draggable="false">
             </div>
             <div class="col d-flex py-2">
                 <p class="my-auto user-select-none">PODCASTS</p>
@@ -46,9 +67,48 @@
           </div>
     </div>
     <h1 class="m-5 fw-bold text-center">Unternehmen Barbarossa</h1>
-    
+    <div class="content p-4">
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                  Accordion Item #1
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                <div class="accordion-body">
+                  <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                  Accordion Item #2
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                <div class="accordion-body">
+                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                  Accordion Item #3
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                <div class="accordion-body">
+                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
     <div>
-        <small><p class="text-secondary text-center">Ein Projekt der Goetheschule Dieburg. <a href="https://achter-mai.web.app/impressum">Impressum</a> | <a href="https://achter-mai.web.app/datenschutzerklrung">Datenschutzerklärung</a></p></small>
+        <small><p class="text-secondary text-center inter">Ein Projekt der Goetheschule Dieburg. <a href="https://achter-mai.web.app/impressum">Impressum</a> | <a href="https://achter-mai.web.app/datenschutzerklrung">Datenschutzerklärung</a></p></small>
     </div>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
