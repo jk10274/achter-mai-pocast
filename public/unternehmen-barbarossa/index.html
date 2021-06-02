@@ -36,11 +36,26 @@
             .content {
             width: 100%;
             }
+            .green-audio-player{
+                width: 300px;
+                position: fixed;
+                bottom: 20px;
+                margin-left: -150px;
+                left: 50%; 
             }
+
+            .make-space {
+                margin-bottom: 100px;
+            }
+        }
+            
         @media (prefers-color-scheme: dark) {
             body {
                 color: #eee;
                 background-color: black;
+            }
+            .card-body {
+                background-color: #232323;
             }
             body a  {
                 color: #809fff;
@@ -70,15 +85,15 @@
 
     <div class="col">
       <div class="card m-5">
-          <div class="card-body bg-card">
-              <h3 class="card-title fw-bold m-3">Unternehmen Barbarossa</h3>
-              <p class="card-text m-3 pb-2 inter">Der folgende Podcast behandelt die Thematik „Unternehmen Barbarossa“. In fiktiven Tagebucheinträgen, unterstützt durch eigens kreierte Hintergrundmusik, präsentieren die Schülerinnen und Schüler die Situation von Soldaten und Familienmitgliedern im Zweiten Weltkrieg.</p>
-              <div class="ready-player-4 inter player m-3">
-                  <audio crossorigin>
-                      <source src="https://cdn.jsdelivr.net/gh/goetheschule/podcasts/unternehmen-barbarossa.mp3" type="audio/mpeg">
-                  </audio>
-              </div>
-          </div>
+            <div class="card-body bg-card">
+                <h3 class="card-title fw-bold m-3">Unternehmen Barbarossa</h3>
+                <p class="card-text m-3 pb-2 inter">Der folgende Podcast behandelt die Thematik „Unternehmen Barbarossa“. In fiktiven Tagebucheinträgen, unterstützt durch eigens kreierte Hintergrundmusik, präsentieren die Schülerinnen und Schüler die Situation von Soldaten und Familienmitgliedern im Zweiten Weltkrieg.</p>
+                <div class="ready-player-4 inter player">
+                    <audio crossorigin>
+                        <source src="https://cdn.jsdelivr.net/gh/goetheschule/podcasts/unternehmen-barbarossa.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+            </div>
       </div>
   </div>
 
@@ -87,7 +102,7 @@
 </div>
 
     
-    <div>
+    <div class="make-space">
         <small><p class="text-secondary text-center inter">Ein Projekt der Goetheschule Dieburg. <a href="https://achter-mai.web.app/impressum">Impressum</a> | <a href="https://achter-mai.web.app/datenschutzerklrung">Datenschutzerklärung</a></p></small>
     </div>
     <script>

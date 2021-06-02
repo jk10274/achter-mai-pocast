@@ -19,12 +19,6 @@
     }
 }
 
-@media only screen and (max-width: 1068px) {
-    .green-audio-player{
-        width: 300px;
-    }
-}
-
 .green-audio-player{
     width:400px;
     min-width:300px;

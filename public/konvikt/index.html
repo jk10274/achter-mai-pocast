@@ -21,17 +21,44 @@
             font-family: 'Playfair Display', serif !important;
             background-color: rgba(248, 249, 253, 1.0);
         }
-        /* @media (prefers-color-scheme: dark) {
+        .inter {
+            font-family: 'Inter', sans-serif !important;
+            }
+        .logo-dark-show {
+            display: none;
+        }
+        .content {
+            margin-left: auto;
+            margin-right: auto;
+            width: 727px;
+        }
+        @media only screen and (max-width: 1068px) {
+            .content {
+            width: 100%;
+            }
+            .green-audio-player{
+                width: 300px;
+            }
+        }
+            
+        @media (prefers-color-scheme: dark) {
             body {
                 color: #eee;
-                background: rgb(235,175,96);
-                background: radial-gradient(circle, rgba(235,175,96,0.5760679271708684) 0%, rgba(0,0,0,0.7413340336134453) 100%);
+                background-color: black;
             }
-
+            .card-body {
+                background-color: #232323;
+            }
             body a  {
                 color: #809fff;
             }
-        } */    
+            .logo-dark-show {
+                display: block;
+            }
+            .logo-dark-hide {
+                display: none;
+            }
+        }      
     </style>
 </head>
 <body>
@@ -65,7 +92,7 @@
     </div>
     
     <div>
-        <small><p class="text-secondary text-center">Ein Projekt der Goetheschule Dieburg. <a href="https://achter-mai.web.app/impressum">Impressum</a> | <a href="https://achter-mai.web.app/datenschutzerklrung">Datenschutzerklärung</a></p></small>
+        <small><p class="text-secondary text-center inter">Ein Projekt der Goetheschule Dieburg. <a href="https://achter-mai.web.app/impressum">Impressum</a> | <a href="https://achter-mai.web.app/datenschutzerklrung">Datenschutzerklärung</a></p></small>
     </div>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
